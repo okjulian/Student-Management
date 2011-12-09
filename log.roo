@@ -1,0 +1,32 @@
+// Spring Roo 1.2.0.RC1 [rev dcaa483] log opened at 2011-12-09 03:12:11
+project --topLevelPackage com.studentmanagement --projectName StudentManagement
+jpa setup --database HYPERSONIC_IN_MEMORY --provider HIBERNATE
+enum type --class ~.shared.Degrees
+enum constant --name computer_science
+enum constant --name software_engineering
+enum constant --name electronic_engineering
+enum constant --name industrial_engineering
+enum constant --name chemical_engineering
+entity jpa --class ~.domain.Student --activeRecord false --equals --testAutomatically 
+field string --fieldName name --sizeMax 25 --notNull 
+field string --fieldName surname --sizeMax 25 --notNull 
+field date --fieldName birthDate --type java.util.Date --past
+field string --fieldName login --unique --notNull --sizeMin 5 --sizeMax 15
+field string --fieldName password --notNull --sizeMin 5 --sizeMax 15
+field enum --fieldName degree --type ~.shared.Degrees --notNull 
+field file --fieldName image --contentType JPG 
+repository jpa --interface ~.domain.StudentRepository
+entity jpa --class ~.domain.Subject --activeRecord false --equals --testAutomatically 
+field string --fieldName name --sizeMax 25 --notNull 
+field boolean --fieldName isApproved
+field date --fieldName examDate --type java.util.Date
+field number --fieldName grade --type int --min 1 --max 10 --notNull 
+field set --fieldName subjects --type ~.domain.Subject --class ~.domain.Student --mappedBy student --notNull false --cardinality ONE_TO_MANY --fetch EAGER 
+field reference --fieldName student --type ~.domain.Student --class ~.domain.Subject --notNull 
+repository jpa --interface ~.domain.SubjectRepository
+web jsf setup
+web jsf all --package ~.web
+logging setup --level INFO
+// script --file studentMGTM.roo
+quit
+// Spring Roo 1.2.0.RC1 [rev dcaa483] log closed at 2011-12-09 03:12:30

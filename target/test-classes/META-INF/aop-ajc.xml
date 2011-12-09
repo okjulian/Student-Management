@@ -1,0 +1,13 @@
+<aspectj>
+<aspects>
+<aspect name="com.studentmanagement.domain.StudentDataOnDemand_Roo_Configurable"/>
+<aspect name="com.studentmanagement.domain.StudentIntegrationTest_Roo_IntegrationTest"/>
+<aspect name="com.studentmanagement.domain.SubjectIntegrationTest_Roo_Configurable"/>
+<aspect name="com.studentmanagement.domain.StudentDataOnDemand_Roo_DataOnDemand"/>
+<aspect name="com.studentmanagement.domain.SubjectDataOnDemand_Roo_Configurable"/>
+<aspect name="com.studentmanagement.domain.SubjectDataOnDemand_Roo_DataOnDemand"/>
+<aspect name="com.studentmanagement.domain.SubjectIntegrationTest_Roo_IntegrationTest"/>
+<aspect name="com.studentmanagement.domain.StudentIntegrationTest_Roo_Configurable"/>
+</aspects>
+</aspectj>
+

@@ -1,0 +1,25 @@
+<aspectj>
+<aspects>
+<aspect name="com.studentmanagement.domain.Subject_Roo_JavaBean"/>
+<aspect name="com.studentmanagement.domain.Student_Roo_JavaBean"/>
+<aspect name="com.studentmanagement.domain.SubjectRepository_Roo_Jpa_Repository"/>
+<aspect name="com.studentmanagement.web.StudentBean_Roo_Configurable"/>
+<aspect name="com.studentmanagement.domain.StudentRepository_Roo_Jpa_Repository"/>
+<aspect name="com.studentmanagement.domain.Subject_Roo_Equals"/>
+<aspect name="com.studentmanagement.domain.Subject_Roo_Jpa_Entity"/>
+<aspect name="com.studentmanagement.web.ApplicationBean_Roo_Configurable"/>
+<aspect name="com.studentmanagement.domain.Student_Roo_Jpa_Entity"/>
+<aspect name="com.studentmanagement.domain.Student_Roo_ToString"/>
+<aspect name="com.studentmanagement.web.SubjectBean_Roo_ManagedBean"/>
+<aspect name="com.studentmanagement.web.converter.StudentConverter_Roo_Configurable"/>
+<aspect name="com.studentmanagement.web.converter.SubjectConverter_Roo_Configurable"/>
+<aspect name="com.studentmanagement.web.converter.SubjectConverter_Roo_Converter"/>
+<aspect name="com.studentmanagement.domain.Student_Roo_Equals"/>
+<aspect name="com.studentmanagement.web.SubjectBean_Roo_Configurable"/>
+<aspect name="com.studentmanagement.domain.Subject_Roo_ToString"/>
+<aspect name="com.studentmanagement.web.converter.StudentConverter_Roo_Converter"/>
+<aspect name="com.studentmanagement.web.StudentBean_Roo_ManagedBean"/>
+<aspect name="com.studentmanagement.web.ApplicationBean_Roo_ApplicationBean"/>
+</aspects>
+</aspectj>
+
